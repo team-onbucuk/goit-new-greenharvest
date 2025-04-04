@@ -52,9 +52,7 @@
     <!-- <load> etiketini tanımlayan JavaScript kod -->
 <script>
     // <load> etiketlerini yükleme fonksiyonu
-    async function loadSections() {
-        const loadElements = document.querySelectorAll('load');
-        for (const element of loadElements) {
+        document.querySelectorAll('load').forEach(async (element) => {
             const src = element.getAttribute('src');
             try {
                 const response = await fetch(src);
@@ -64,10 +62,8 @@
             } catch (error) {
                 console.error('Hata:', error);
             }
-        }
-        // Tüm section'lar yüklendikten sonra menü event'lerini ekle
-        setupMenu();
-    }
+            setupMenu();
+        });
 
     // Menü açma/kapama fonksiyonu
     function setupMenu() {
