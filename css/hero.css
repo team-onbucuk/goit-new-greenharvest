@@ -1,0 +1,116 @@
+/* Settings for mobile devices */
+
+.section-hero {
+  background-color: #576f35;
+}
+
+.hero-container {
+  background-color: #576f35;
+  display: flex;
+  flex-direction: column;
+  height: 840px;
+  padding-top: 100px;
+  background-size: 375px 372px;
+  background-image: linear-gradient(
+      rgba(20, 20, 20, 0.2),
+      rgba(20, 20, 20, 0.2)
+    ),
+    url(../img/hero/hero–mobile/img-1-mobile.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.hero-title {
+  font-size: 52px;
+}
+
+/* High-resolution mobile devices */
+@media screen and (min-width: 375px) and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url(../img/hero/hero-mobile/img-1-mobile@2x.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Settings for tablet devices */
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    padding-top: 120px;
+    height: 1020px;
+    background-size: 768px 536px;
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url(../img/hero/hero–tablet/img-1-tablet.jpg);
+  }
+
+  .hero-title {
+    font-size: 76px;
+    margin-bottom: 24px;
+  }
+  .hero-p {
+    font-size: 16px;
+    max-width: 603px;
+  }
+}
+
+/* High-resolution tablet devices */
+@media screen and (min-width: 375px) and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url(../img/hero/hero-mobile/img-1-mobile@2x.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Settings for Desktop devices */
+
+@media screen and (min-width: 1280px) {
+  .hero-container {
+    padding-top: 232px;
+    height: 796px;
+    background-size: 650px 796px;
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url(../img/hero/hero–desktop/img-1-desktop.jpg);
+    background-position: right;
+  }
+
+  .hero-title {
+    width: 502px;
+    margin-bottom: 128px;
+  }
+  .hero-p {
+    width: 472px;
+    font-size: 16px;
+  }
+}
+
+/* High-resolution Desktop devices */
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url(../img/hero/hero–desktop/img-1-desktop@2x.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+}

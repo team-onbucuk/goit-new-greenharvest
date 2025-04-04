@@ -1,0 +1,126 @@
+/* Settings for mobile devices */
+
+.section-vegetables {
+  background: #7a3145;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vegetables-title {
+  font-size: 48px;
+  line-height: 52px;
+  max-width: 335px;
+}
+
+.vegetables-title > span {
+  color: #d4bfc4;
+}
+
+.vegetables-p {
+  max-width: 335px;
+  padding-bottom: 40px;
+}
+
+.vegetables-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vegetables-list-item {
+  border-radius: 40px;
+  background: #fbfbfb;
+  width: 100%;
+}
+
+.contanier-vegetables-list {
+  position: relative;
+  overflow: hidden;
+  padding: 32px 26px;
+}
+
+.list-title {
+  font-size: 28px;
+  color: #7a3145;
+  padding-bottom: 12px;
+  margin-bottom: 0;
+}
+
+.list-p {
+  text-transform: uppercase;
+  color: #141414;
+  padding-bottom: 12px;
+}
+
+.vegetables-img {
+  width: 280px;
+  height: 240px;
+  object-fit: cover;
+}
+
+/* Settings for tablet devices */
+
+@media screen and (min-width: 768px) {
+  .vegetables-title {
+    font-size: 64px;
+    line-height: 1;
+    max-width: 508px;
+  }
+
+  .vegetables-p {
+    font-size: 16px;
+    max-width: 626px;
+    padding-bottom: 50px;
+  }
+
+  .vegetables-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 28px;
+    column-gap: 20px;
+  }
+
+  .list-title {
+    font-size: 32px;
+  }
+
+  .vegetables-list-item {
+    width: calc((100% - 20px) / 2);
+  }
+
+  .contanier-vegetables-list {
+    padding: 32px 30px;
+  }
+}
+
+/* Settings for Desktop devices */
+
+@media screen and (min-width: 1280px) {
+  .section-vegetables {
+    height: 1232px;
+  }
+  .vegetables-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 28px;
+    column-gap: 20px;
+  }
+
+  .vegetables-list-item {
+    width: calc((100% - 40px) / 3);
+  }
+
+  .contanier-vegetables-list {
+    padding: 32px 32px;
+  }
+
+  .list-p {
+    padding-bottom: 8px;
+  }
+}
+
+.section4-item:hover {
+  animation-duration: 2s;
+  animation-name: vegatables;
+}

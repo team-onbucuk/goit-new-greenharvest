@@ -1,0 +1,91 @@
+/* CSS Global Settings */
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #fbfbfb;
+  vertical-align: middle;
+}
+
+/* Settings for mobile devices */
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+    padding: 80px 20px 80px 20px
+  }
+}
+
+
+
+/* Settings for tablet devices */
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 100px 32px 100px 32px
+  }
+}
+
+/* Settings for Desktop devices */
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 100px
+  }
+}

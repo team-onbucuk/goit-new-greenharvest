@@ -1,0 +1,79 @@
+/* Settings for mobile devices */
+
+.section-advertisement {
+  background: #fbfbfb;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advertisement-container-two {
+  position: relative;
+}
+
+.advertisement-p > span {
+  color: #fbfbfb;
+}
+
+.background-advertisement-text {
+  position: absolute;
+  background-color: #576f35;
+  height: 100px;
+  width: 350px;
+  border-radius: 12px;
+  left: -10px;
+  flex-shrink: 5;
+}
+
+.advertisement-p {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.015em;
+  color: #141414;
+  text-transform: uppercase;
+  max-width: 330px;
+  position: relative;
+}
+
+/* Settings for tablet devices */
+
+@media screen and (min-width: 768px) {
+  .advertisement-p {
+    font-size: 64px;
+    line-height: 1;
+    max-width: 704px;
+  }
+
+  .background-advertisement-text {
+    height: 86px;
+    width: 675px;
+    top: -20px;
+    left: 0px;
+  }
+}
+
+/* Settings for Desktop devices */
+
+@media screen and (min-width: 1280px) {
+  .background-advertisement-text {
+    height: 84px;
+    width: 808px;
+    top: -4px;
+    left: -16px;
+  }
+  .advertisement-p {
+    font-size: 76px;
+    max-width: 1070px;
+  }
+}

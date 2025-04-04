@@ -1,0 +1,65 @@
+<section class="section-order" id="your-order">
+    <div class="container order-container">
+        <div class="order-top-container">
+            <h2 class="your-order-title">
+                Fresh <span class="harvest-span">Harvest</span> Box has got you covered
+            </h2>
+            <p class="your-order-p">
+                Our boxes are packed with delicious, nutritious vegetables, perfect for
+                anyone looking to eat healthier or support local farmers. Order your box
+                today and start enjoying the best that nature has to offer!
+            </p>
+        </div>
+        <div class="order-bottom-container">
+            <form name="order-form" class="your-order-form">
+                <h3 class="form-title">
+                    Ordering <span class="from-us-span">from us</span> is quick and easy!
+                    Fill out <span class="the-form-span">the form</span> below and we will
+                    contact you !
+                </h3>
+                <label for="username" class="form-label">
+                    <input type="text" name="username" id="username" class="form-input" placeholder="Full Name"
+                        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
+                </label>
+                <label for="email" class="form-label">
+                    <input type="email" name="email" id="email" class="form-input" placeholder="Email"
+                        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
+                </label>
+                <label for="comment" class="form-label textarea-label">
+                    <textarea name="comment" id="comment" class="form-textarea" placeholder="Comment"></textarea>
+                </label>
+                <button type="submit" class="form-btn">Send</button>
+            </form>
+            <div class="socials-container">
+
+                <picture>
+                    <source media="(max-width: 767px )" type="image/jpg" srcset="
+                                    ./img/your-order/your-order-mobile/img-mobile.jpg,
+                                    ./img/your-order/your-order-mobile/img-mobile@2x.jpg" />
+                    <source media="(min-width: 768px )" type="image/jpg" srcset="
+                                    ./img/your-order/your-order-tablet/img-tablet.jpg,
+                                    ./img/your-order/your-order-tablet/img-tablet@2x.jpg" />
+                    <source media="(min-width: 1280px)" type="image/jpg" srcset="
+                                    ./img/your-order/your-order-desktop/img-desktop.jpg,
+                                    ./img/your-order/your-order-desktop/img-desktop@2x.jpg" />
+                    <img class="socials-image">
+                </picture>
+
+                <p class="socials-p">Follow us on our social networks:</p>
+                <ul class="socials-list">
+                    <li class="socials-item">
+                        <a href="https://www.instagram.com/goit.turkiye/" class="socials-link soc-pseudo"
+                            target="_blank">instagram </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href=" https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/"
+                            class="socials-link soc-pseudo" target="_blank">facebook</a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="https://m.youtube.com/@GoITTurkey" class="socials-link" target="_blank">youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
